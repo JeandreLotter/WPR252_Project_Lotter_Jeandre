@@ -35,7 +35,7 @@ app.post('/save-contact',(req,res)=>{
     let fs = require('fs');
     
     fs.appendFileSync('./public/docs/contacts.txt', output);
-    res.render('pages/contact');
+    res.render('pages/home');
 })
 
 app.listen(8080,()=>{
